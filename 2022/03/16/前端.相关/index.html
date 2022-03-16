@@ -48,7 +48,7 @@
     
     <title>
         
-            归档 | 
+            面试相关 | 
         
         白色波浪
     </title>
@@ -220,7 +220,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="白色波浪">
-    <meta name="msapplication-starturl" content="http://example.com/archives/">
+    <meta name="msapplication-starturl" content="http://example.com/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="白色波浪">
@@ -235,13 +235,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://example.com/archives/">
+    <meta property="og:url" content="http://example.com/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | 白色波浪">
+    <meta property="og:title" content="面试相关 | 白色波浪">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Wed Mar 16 2022 19:48:23 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 16 2022 19:48:23 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,13 +252,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://example.com/archives/index.html" />
+        <link rel="canonical" href="http://example.com/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/index.html",
+    "headline": "面试相关",
+    "datePublished": "Wed Mar 16 2022 19:48:23 GMT+0800",
+    "dateModified": "Wed Mar 16 2022 19:48:23 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "winifred丶",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, who can stop me is me"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "白色波浪",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "谈兵,前端,javascript,html,css,node,react,angular,vue",
+    "description": "",
+}
+</script>
 
 
     
@@ -289,448 +322,244 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-%E5%85%88%E4%B8%8A%E4%B8%80%E9%A2%98%E7%83%AD%E7%83%AD%E8%BA%AB%E3%80%82"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.先上一题热热身。</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-%E5%B0%BD%E9%87%8F%E6%8A%8Acss%E7%94%A8%E7%9A%84%E7%B1%BB%E5%90%8D%E5%92%8Cjs%E7%94%A8%E7%9A%84%E7%B1%BB%E5%90%8D%E5%88%86%E5%BC%80%EF%BC%8C%E5%86%99%E4%BB%A3%E7%A0%81%E7%9A%84%E6%97%B6%E5%80%99%E8%A6%81%E4%B8%BB%E8%A6%81%E5%8F%98%E9%87%8F%E6%B1%A1%E6%9F%93"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.尽量把css用的类名和js用的类名分开，写代码的时候要主要变量污染</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-%E5%B0%BD%E9%87%8F%E7%94%A8%E6%97%B6%E9%97%B4%E5%A7%94%E6%89%98%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0%E4%BA%8B%E4%BB%B6"><span class="post-toc-number">3.</span> <span class="post-toc-text">3.尽量用时间委托方式添加事件</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E5%9E%8B%EF%BC%89"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.实现方法（原型）</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-0-2-0-1-0-3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%BF%94%E5%9B%9Efalse"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.  0.2 + 0.1 &#x3D;&#x3D;&#x3D; 0.3 为什么会返回false?</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#6-0-3-0-4-0-7-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%94%E5%9B%9Etrue"><span class="post-toc-number">6.</span> <span class="post-toc-text">6. 0.3 + 0.4 &#x3D;&#x3D;&#x3D; 0.7 为什么返回true?</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#7-%E5%88%A9%E7%94%A8requestAnimationFrame%E5%AE%9E%E7%8E%B0setInterval%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="post-toc-number">7.</span> <span class="post-toc-text">7. 利用requestAnimationFrame实现setInterval定时器</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/">面试相关</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2022/03/16/%E5%89%8D%E7%AB%AF.%E7%9B%B8%E5%85%B3/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>3月 16, 2022</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2022/03/16/webpack/">webpack</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-对webpack用法与配置做一个总结，希望能勾起自己的回忆
-
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2022/03/16/webpack/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>3月 16, 2022</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/10/03/%E7%BB%A7%E6%89%BF/">还熟悉吗？继承</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-继承是OO语言中的一个最为人津津乐道的概念.许多OO语言都支持两种继承方式: 接口继承 和 实现继承 .接口继承只继承方法...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/10/03/%E7%BB%A7%E6%89%BF/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>10月 03, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/10/02/js%E7%9B%B8%E5%85%B3/">还熟悉吗？javascript</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-ES6新特性
-
-const和let
-模板字符串
-箭头函数
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/10/02/js%E7%9B%B8%E5%85%B3/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>10月 02, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/10/01/%E5%89%8D%E7%AB%AF/">Does it make sense to you ？</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-首先，我为什么会写这篇文章，因为相对这几年的经历做个总结，希望自己还能不忘初心。
-
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/10/01/%E5%89%8D%E7%AB%AF/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>10月 01, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/06/14/react/">react相关</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-React的严格模式如何使用，有什么用处 StrictMode 是一个用来突出显示应用程序中潜在问题的工具,不会渲染任何可...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/06/14/react/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>6月 14, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/08/09/%E5%89%8D%E7%AB%AF%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">还记得吗？</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-前端页面渲染流程
-
-
-浏览器根据url请求ip,访问对应地址的html，返回html
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/08/09/%E5%89%8D%E7%AB%AF%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="winifred丶's avatar">
-            </div>
-            <div>
-                <strong>winifred丶</strong>
-                <span>8月 09, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                面试相关
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>winifred丶</strong>
+        <span>3月 16, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h5 id="1-先上一题热热身。"><a href="#1-先上一题热热身。" class="headerlink" title="1.先上一题热热身。"></a>1.先上一题热热身。</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Foo</span>(<span class="params"></span>) &#123;</span><br><span class="line">    getName = <span class="keyword">function</span> (<span class="params"></span>) &#123; alert (<span class="number">1</span>); &#125;;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Foo</span>.<span class="property">getName</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123; alert (<span class="number">2</span>);&#125;;</span><br><span class="line"><span class="title class_">Foo</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123; alert (<span class="number">3</span>);&#125;;</span><br><span class="line"><span class="keyword">var</span> getName = <span class="keyword">function</span> (<span class="params"></span>) &#123; alert (<span class="number">4</span>);&#125;;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getName</span>(<span class="params"></span>) &#123; alert (<span class="number">5</span>);&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//请写出以下输出结果：</span></span><br><span class="line"><span class="title class_">Foo</span>.<span class="title function_">getName</span>(); <span class="comment">// 2</span></span><br><span class="line"><span class="title function_">getName</span>(); <span class="comment">//4</span></span><br><span class="line"><span class="title class_">Foo</span>().<span class="title function_">getName</span>(); <span class="comment">//1</span></span><br><span class="line"><span class="title function_">getName</span>(); <span class="comment">//1</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Foo</span>.<span class="title function_">getName</span>(); <span class="comment">//2</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Foo</span>().<span class="title function_">getName</span>(); <span class="comment">//3</span></span><br><span class="line"><span class="keyword">new</span> <span class="keyword">new</span> <span class="title class_">Foo</span>().<span class="title function_">getName</span>(); <span class="comment">//3   new ((new Foo()).getName)();</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-尽量把css用的类名和js用的类名分开，写代码的时候要主要变量污染"><a href="#2-尽量把css用的类名和js用的类名分开，写代码的时候要主要变量污染" class="headerlink" title="2.尽量把css用的类名和js用的类名分开，写代码的时候要主要变量污染"></a>2.尽量把css用的类名和js用的类名分开，写代码的时候要主要变量污染</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> ndCon = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;js-list&#x27;</span>);</span><br><span class="line">    <span class="keyword">if</span>(!ndCon) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> ndItem = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;li&#x27;</span>);</span><br><span class="line">        ndItem.<span class="property">innerText</span> = i + <span class="number">1</span>;</span><br><span class="line">        ndContainer.<span class="title function_">appendChild</span>(ndItem);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-尽量用时间委托方式添加事件"><a href="#3-尽量用时间委托方式添加事件" class="headerlink" title="3.尽量用时间委托方式添加事件"></a>3.尽量用时间委托方式添加事件</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    ndCon.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> target = e.<span class="property">target</span>;</span><br><span class="line">        <span class="keyword">if</span> (target.<span class="property">tagName</span> === <span class="string">&#x27;LI&#x27;</span>) &#123;</span><br><span class="line">            <span class="title function_">alert</span>(target.<span class="property">innerHTML</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-实现方法（原型）"><a href="#4-实现方法（原型）" class="headerlink" title="4.实现方法（原型）"></a>4.实现方法（原型）</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="comment">// Implement this</span></span><br><span class="line">a.<span class="title function_">multiply</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a); <span class="comment">// [1, 2, 3, 4, 5, 1, 4, 9, 16, 25]</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">multiply</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="variable language_">this</span>.<span class="property">length</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">push</span>(<span class="variable language_">this</span>[i] * <span class="variable language_">this</span>[i]);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-0-2-0-1-0-3-为什么会返回false"><a href="#5-0-2-0-1-0-3-为什么会返回false" class="headerlink" title="5.  0.2 + 0.1 === 0.3 为什么会返回false?"></a>5.  0.2 + 0.1 === 0.3 为什么会返回false?</h5><blockquote>
+<ul>
+<li>1.存储原理: <pre><code>      在计算机中无论是定点数还是浮点数都是以多位二进制的方式进行存储，在JS中数字采用的IEEE 754的双精度浮点数编码标准进行存储（二进制尾数多，精度准确），
+      js提供的有效数字最长为53个二进制位（52 + 1（被省略的正负第一位））,0.1与很多十进制小数用二进制表示都是无限循环的，而超过52位后，就被舍掉了，就会出现精度丢失问题，
+  也就造成了 0.1 不再是 0.1 了，而是变成了 0.100000000000000002
+</code></pre>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.100000000000000002</span> === <span class="number">0.1</span> <span class="comment">// true</span></span><br><span class="line"><span class="number">0.200000000000000002</span> === <span class="number">0.2</span> <span class="comment">// true</span></span><br><span class="line"><span class="number">0.1</span> + <span class="number">0.2</span> === <span class="number">0.30000000000000004</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="6-0-3-0-4-0-7-为什么返回true"><a href="#6-0-3-0-4-0-7-为什么返回true" class="headerlink" title="6. 0.3 + 0.4 === 0.7 为什么返回true?"></a>6. 0.3 + 0.4 === 0.7 为什么返回true?</h5><blockquote>
+<p>由上一题可知0.3与0.4也是用二进制表示后无限循环的，但为什么等于0.7呢？<br>由于指数位数不同，运算时需要进行对阶运算</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span> + <span class="number">0.2</span> -&gt; <span class="number">10.0110011001100110011001100110011001100110011001100111</span></span><br><span class="line"><span class="number">0.3</span> + <span class="number">0.4</span> -&gt; <span class="number">10.1100110011001100110011001100110011001100110011001101</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>求和结果需规格化（有效数字表示），右规导致低位丢失，此时需对丢失的低位进行舍入操作：</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span> + <span class="number">0.2</span> -&gt; <span class="number">1.00110011001100110011001100110011001100110011001100111</span> -&gt; <span class="number">1.0011001100110011001100110011001100110011001100110100</span>(入)</span><br><span class="line"><span class="number">0.3</span> + <span class="number">0.4</span> -&gt; <span class="number">1.01100110011001100110011001100110011001100110011001101</span> -&gt; <span class="number">1.0110011001100110011001100110011001100110011001100110</span>(舍)</span><br><span class="line"></span><br><span class="line"><span class="comment">//即</span></span><br><span class="line"><span class="number">00111</span> -&gt; <span class="number">0100</span></span><br><span class="line"><span class="number">01101</span> -&gt; <span class="number">0110</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>此处同样有精度损失。在这里我们可以发现，0.3+0.4对阶阶运算且规格化后的运算结果与0.7在二进制中的存储尾数相同，而0.1+0.2的运算结果与0.3的存储尾数不同，且0.1+0.2转化为十进制时结果为0.300000000000000004</p>
+</blockquote>
+<h5 id="7-利用requestAnimationFrame实现setInterval定时器"><a href="#7-利用requestAnimationFrame实现setInterval定时器" class="headerlink" title="7. 利用requestAnimationFrame实现setInterval定时器"></a>7. 利用requestAnimationFrame实现setInterval定时器</h5><blockquote>
+<p>requestAnimationFrame 是js的动画定时器，与timeout和interval定时器稍有不一样，他是60/s的频率执行，而timeout和interval定时器的时间不固定</p>
+</blockquote>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81NTQ4MC8zMTk0Nw">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2022/03/16/webpack/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

@@ -48,7 +48,7 @@
     
     <title>
         
-            webpack相关 | 
+            还熟悉吗？javascript | 
         
         白色波浪
     </title>
@@ -220,7 +220,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="白色波浪">
-    <meta name="msapplication-starturl" content="http://example.com/2018/06/14/webpack/">
+    <meta name="msapplication-starturl" content="http://example.com/2020/10/02/js%E7%9B%B8%E5%85%B3/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="白色波浪">
@@ -235,16 +235,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://example.com/2018/06/14/webpack/">
+    <meta property="og:url" content="http://example.com/2020/10/02/js%E7%9B%B8%E5%85%B3/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="webpack相关 | 白色波浪">
+    <meta property="og:title" content="还熟悉吗？javascript | 白色波浪">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Thu Jun 14 2018 00:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Feb 14 2022 16:25:41 GMT+0800">
+        <meta property="article:published_time" content="Fri Oct 02 2020 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 16 2022 19:48:23 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -252,7 +252,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://example.com/2018/06/14/webpack/index.html" />
+        <link rel="canonical" href="http://example.com/2020/10/02/js%E7%9B%B8%E5%85%B3/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -264,10 +264,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://example.com/2018/06/14/webpack/index.html",
-    "headline": "webpack相关",
-    "datePublished": "Thu Jun 14 2018 00:00:00 GMT+0800",
-    "dateModified": "Mon Feb 14 2022 16:25:41 GMT+0800",
+    "mainEntityOfPage": "http://example.com/2020/10/02/js%E7%9B%B8%E5%85%B3/index.html",
+    "headline": "还熟悉吗？javascript",
+    "datePublished": "Fri Oct 02 2020 00:00:00 GMT+0800",
+    "dateModified": "Wed Mar 16 2022 19:48:23 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "winifred丶",
@@ -345,15 +345,6 @@
     <!-- Left aligned menu below button -->
     
     
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link"><span class="post-toc-number">1.</span> <span class="post-toc-text"></span></a></li></ol>
-    </ul>
-    
 
 
 
@@ -383,7 +374,7 @@
         
     
             <p class="article-headline-p">
-                webpack相关
+                还熟悉吗？javascript
             </p>
         </div>
 
@@ -402,7 +393,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>winifred丶</strong>
-        <span>6月 14, 2018</span>
+        <span>10月 02, 2020</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -462,10 +453,143 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <blockquote>
-<p>对webpack用法做一个总结，希望能勾起自己的回忆</p>
+        <ol>
+<li><p>ES6新特性</p>
+<ul>
+<li>const和let</li>
+<li>模板字符串</li>
+<li>箭头函数</li>
+<li>Spread / Rest 操作符 （解构赋值 / 展开符）</li>
+<li>class（contractor）</li>
+<li>Promise</li>
+<li>Modules</li>
+</ul>
+</li>
+<li><p>介绍Promise以及Promise的几种状态</p>
+<blockquote>
+<p>promise是一种异步编程的解决方案，比回调函数更加的合理。简单说promise就是一个容器，里面保存着某个未来才会结束的事件的结果。</p>
 </blockquote>
-<h5 id=""><a href="#" class="headerlink" title=""></a></h5>
+<ul>
+<li>pending： 进行中</li>
+<li>fulfilled： 已成功</li>
+<li>rejected: 以失败</li>
+</ul>
+</li>
+<li><p>谈谈你对闭包的理解及其优缺点</p>
+<blockquote>
+<p>闭包就是函数形成的封闭作用域，外部不会影响闭包内的变量和方法，闭包可以使用外部的变量和方法</p>
+</blockquote>
+<ul>
+<li>优点： <ul>
+<li>保护局部变量</li>
+<li>逻辑连续，多次使用</li>
+<li>参数和标量不会被垃圾回收机制回收</li>
+</ul>
+</li>
+<li>缺点： <ul>
+<li>容易内存溢出，变量长期存在内存中</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>取数组的最大值</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="property">max</span>.<span class="title function_">apply</span>(<span class="literal">null</span>,arr) <span class="comment">//es5</span></span><br><span class="line"><span class="title class_">Math</span>.<span class="title function_">max</span>(...arr) <span class="comment">// es6</span></span><br></pre></td></tr></table></figure></li>
+<li><p>http并发请求资源数上限</p>
+<blockquote>
+<p> HTTP客户端一般对同一个服务器的并发连接个数都是有限制的, 最大为6条</p>
+</blockquote>
+</li>
+<li><p>介绍下HTTP状态码, 403、301、302分别代表什么</p>
+<ul>
+<li><strong>301</strong>: 请求的网页已永久移动到新位置</li>
+<li><strong>302</strong>: 临时移动</li>
+<li><strong>403</strong>: 服务器拒绝请求</li>
+<li><strong>304</strong>: 浏览器缓存，例如第一次请求，200，添加max-age，第二次请求如果没有超过max-age，直接返回缓存，优化页面响应速度。</li>
+</ul>
+</li>
+<li><p>如何优化用户体验</p>
+<ul>
+<li>页面渲染前使用骨架屏或者加载动画,避免大块白屏</li>
+<li>使用预渲染或者ssr技术提高首屏加载时间</li>
+<li>动画使用css3硬件加速,避免用户操作动画卡顿</li>
+<li>计算密集型业务使用web worker或者js分片处理,避免js线程阻塞</li>
+<li>页面状态监控,给用户提供反馈机制</li>
+<li>静态资源走CDN缓存或者oss服务,提高用户访问速度</li>
+<li>避免用户操作报错,提供404页面或则错误提示页面</li>
+</ul>
+</li>
+<li><p>介绍下跨域</p>
+<blockquote>
+<p>同源策略/SOP（Same origin policy）是一种约定，它是浏览器最核心也最基本的安全功能，两个通讯地址的协议、域名、端口号必须相同，否则两个地址的通讯将被浏览器视为不安全的，防止攻击</p>
+</blockquote>
+<ul>
+<li>JSONP：本质上是用script不受同源策略的相应，可以直接加载其他的资源</li>
+<li>CORS：Response Header 上面添加Access-Control-Allow-Origin 属性</li>
+</ul>
+</li>
+<li><p>csrf跨站攻击怎么解决</p>
+<blockquote>
+<p>CSRF, 跨站请求伪造,它可以在用户毫不知情的情况下以用户名义伪造请求发送给受攻击站点，从而对用户或者网站造成攻击. 预防措施如下: 服务器端验证HTTP Referer字段, Referer记录了该HTTP请求的来源地址 在请求地址中添加token并验证 * 在HTTP头中自定义属性并验证</p>
+</blockquote>
+</li>
+<li><p>柯里化函数和扁平化数组  </p>
+<blockquote>
+<p>柯里化函数是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数的技术。<br>扁平化数组指的是将多维数组转化为一维数组的过程</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//柯里化函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">add</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 第一次执行时，定义一个数组专门用来存储所有的参数</span></span><br><span class="line">    <span class="keyword">var</span> _args = <span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">slice</span>.<span class="title function_">call</span>(<span class="variable language_">arguments</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在内部声明一个函数，利用闭包的特性保存_args并收集所有的参数值</span></span><br><span class="line">    <span class="keyword">var</span> _adder = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        _args.<span class="title function_">push</span>(...<span class="variable language_">arguments</span>);</span><br><span class="line">        <span class="keyword">return</span> _adder;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 利用toString隐式转换的特性，当最后执行时隐式转换，并计算最终的值返回</span></span><br><span class="line">    _adder.<span class="property">toString</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> _args.<span class="title function_">reduce</span>(<span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> a + b;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> _adder;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">add</span>(<span class="number">1</span>)(<span class="number">2</span>)(<span class="number">3</span>)                <span class="comment">// 6</span></span><br><span class="line"><span class="title function_">add</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)(<span class="number">4</span>)             <span class="comment">// 10</span></span><br><span class="line"><span class="title function_">add</span>(<span class="number">1</span>)(<span class="number">2</span>)(<span class="number">3</span>)(<span class="number">4</span>)(<span class="number">5</span>)          <span class="comment">// 15</span></span><br><span class="line"><span class="title function_">add</span>(<span class="number">2</span>, <span class="number">6</span>)(<span class="number">1</span>)                <span class="comment">// 9</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//扁平化数组</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">flatten</span>(<span class="params">arr = []</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> arr.<span class="title function_">toString</span>().<span class="title function_">split</span>(<span class="string">&#x27;,&#x27;</span>).<span class="title function_">map</span>(<span class="function"><span class="params">item</span> =&gt;</span> <span class="title class_">Number</span>(item))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>对async/await的理解，原理</p>
+<blockquote>
+<p>回调函数和promise都会存在回调地狱的问题，而generator/yield虽然解决了回调地狱的问题，但是需要自己去写迭代器，而async/await解决了回调地狱的问题，还封装了generator函数和自动执行器，其实就是generator的语法糖，只不过包含了自动执行器，开发者不用关心内部逻辑。</p>
+</blockquote>
+<ul>
+<li>generator/yield会暂停代码执行。而async/await的返回值promise对象，并且里面拥有promise状态</li>
+<li>async/await会被编译成generator和promise的语法代码。</li>
+</ul>
+</li>
+<li><p>介绍下Promise，内部实现</p>
+<blockquote>
+<p>promise是一种异步编程的额实现方式，简单来说就是他里面包含了某个未来才会结束的事件的返回值。</p>
+</blockquote>
+<ul>
+<li>promise有七个属性： state（状态），value（返回值），reason（错误信息）， resolve方法，reject方法，then方法<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Promise</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">executor</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">state</span> = <span class="string">&#x27;pending&#x27;</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">value</span> = <span class="literal">undefined</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">reason</span> = <span class="literal">undefined</span></span><br><span class="line">        <span class="keyword">let</span> <span class="title function_">resolve</span> = value =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">state</span> === <span class="string">&#x27;pending&#x27;</span>) &#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">state</span> = <span class="string">&#x27;fulfilled&#x27;</span></span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">value</span> = value</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">let</span> <span class="title function_">reject</span> = reason =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">state</span> === <span class="string">&#x27;pending&#x27;</span>) &#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">state</span> = <span class="string">&#x27;rejected&#x27;</span></span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">reason</span> = reason</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="title function_">executor</span>(resolve, reject)</span><br><span class="line">        &#125; <span class="title function_">cateh</span>(<span class="params">err</span>) &#123;</span><br><span class="line">            <span class="title function_">reject</span>(err)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">then</span>(<span class="params">onFulfilled, onRejected</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">state</span> === <span class="string">&#x27;fulfilled&#x27;</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> x = <span class="title function_">onFullfilled</span>(<span class="variable language_">this</span>.<span class="property">value</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">state</span> === <span class="string">&#x27;rejected&#x27;</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> x = <span class="title function_">onRejected</span>(<span class="variable language_">this</span>.<span class="property">reason</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>tcp3次握手</p>
+<ul>
+<li>建立连接时，客户端发送syn包（syn=j）到服务器，并进入SYN_SENT状态，等待服务器确认</li>
+<li>服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态</li>
+<li>客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=k+1），此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态</li>
+</ul>
+</li>
+<li><p>tcp，ip，http属于哪一层</p>
+<blockquote>
+<p>tcp属于传输层，ip属于网络层，http属于应用层</p>
+</blockquote>
+<ul>
+<li>应用层 -&gt; 传输层 -&gt; 网络层 -&gt; 网络接口层</li>
+<li>应用层，对应于OSI参考模型的高层，为用户提供所需要的各种服务；</li>
+<li>传输层，为应用层实体提供端到端的通信功能，保证了数据包的顺序传送及数据的完整</li>
+<li>网络层，负责相邻节点之间的通信；</li>
+<li>网络接口层，负责监视数据在主机和网络之间的交换。</li>
+</ul>
+</li>
+<li><p>bind、call、apply的区别</p>
+<blockquote>
+<p>三个方法都是绑定this</p>
+</blockquote>
+<ul>
+<li>bind绑定this，并不会执行方法，返回新的方法</li>
+<li>call绑定this，会立即执行函数</li>
+<li>apply绑定this，参数是数组，会立即执行</li>
+</ul>
+</li>
+<li><p>介绍下原型链（解决的是继承问题吗）</p>
+<blockquote>
+<p>每个构造函数都是自己一个原型protoType，每一个对象则都有自己的原型_proto_，_proto_指向的是其构造函数的protoType，protoType也是一个对象，是对象也会有自己的构造函数，也有自己的原型_proto_。当我们使用对象上的属性时，他会在自己身上查找，查找不到回去自己的原型_proto_上面去找，查找不到就是取上级原型—_proto_上面查找，最终会找到protoType，这个关系就叫做原型链。</p>
+</blockquote>
+</li>
+</ol>
+
         
     
 
@@ -507,7 +631,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/08/09/%E5%89%8D%E7%AB%AF%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/" id="post_nav-newer" class="prev-content">
+        <a href="/2020/10/03/%E7%BB%A7%E6%89%BF/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -520,6 +644,14 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2020/10/01/%E5%89%8D%E7%AB%AF/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -605,7 +737,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/02/">二月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/10/">十月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/10/">十月 2020<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
