@@ -244,7 +244,7 @@
 
     
         <meta property="article:published_time" content="Fri Aug 09 2019 00:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Wed Mar 16 2022 20:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Thu Mar 17 2022 18:47:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -267,7 +267,7 @@
     "mainEntityOfPage": "http://example.com/2019/08/09/%E5%89%8D%E7%AB%AF%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/index.html",
     "headline": "还记得吗？",
     "datePublished": "Fri Aug 09 2019 00:00:00 GMT+0800",
-    "dateModified": "Wed Mar 16 2022 20:00:00 GMT+0800",
+    "dateModified": "Thu Mar 17 2022 18:47:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "winifred丶",
@@ -643,14 +643,66 @@ constant在iOS &lt; 11.2的版本中生效，env在iOS &gt;= 11.2的版本中生
 <li>预渲染技术</li>
 </ul>
 </li>
-</ol>
-<ol start="20">
-<li>清除浮动<ul>
+<li><p>清除浮动</p>
+<ul>
 <li>clean</li>
 <li>父元素加overflow: hidden</li>
 <li>伪类clean, 父元素zoom: 1可以解决IE6-IE7浮动问题</li>
 </ul>
 </li>
+<li><p>Linux 754 介绍</p>
+<blockquote>
+<p>linux文件权限，这串字符可以分成4段理解，结构为“d + 文件所有者操作权限 + 文件所有者所在组操作权限 + 其余人的操作权限”：</p>
+</blockquote>
+<ul>
+<li>1：执行权限</li>
+<li>2: 写入权限</li>
+<li>4：读取权限</li>
+<li>7：表示文件所有者的权限 4 + 2 + 1 = 7</li>
+<li>5：表示文件所有者所在组的权限， 4 + 1 = 5</li>
+</ul>
+</li>
+<li><p>介绍冒泡排序，选择排序，冒泡排序如何优化</p>
+<blockquote>
+<p>冒泡排序：从第一位开始，比较两个相邻的大小，按排序方式调换位置，一直到最后。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">bubSort</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.<span class="property">length</span>; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="keyword">var</span> temp = arr[j];</span><br><span class="line">                arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">                arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">bubSort</span>(arr); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr); <span class="comment">//[1, 2, 3, 4, 5, 7, 8, 9]</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>选择排序：找一个基准点，比如数组中间的值，根据这个中间值，把小于的放到左边的数组，大于的放到右边的数组，使用回调，直至排序完成</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">seSort</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (arr.<span class="property">length</span> &lt;= <span class="number">1</span>) <span class="keyword">return</span> arr;</span><br><span class="line">    <span class="keyword">var</span> centerIndex = <span class="title class_">Math</span>.<span class="title function_">floor</span>(arr.<span class="property">length</span> / <span class="number">2</span>);</span><br><span class="line">    <span class="keyword">var</span> pivot = arr.<span class="title function_">splice</span>(centerIndex, <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> left = [];</span><br><span class="line">    <span class="keyword">var</span> right = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] &lt;= pivot) &#123;</span><br><span class="line">            left.<span class="title function_">push</span>(arr[i]);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            right.<span class="title function_">push</span>(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">seSort</span>(left).<span class="title function_">concat</span>([pivot], <span class="title function_">seSort</span>(right))</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">seSort</span>(arr)); <span class="comment">//[1, 2, 3, 4, 5, 7, 8, 9</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>冒泡排序优化<blockquote>
+<p>判断当没有产生交换时，说明排序已经完成，手动断开</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">bubSort</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> swap = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.<span class="property">length</span>; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="keyword">var</span> temp = arr[j];</span><br><span class="line">                arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">                arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">                swap = <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(!swap) <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">bubSort</span>(arr); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr); <span class="comment">//[1, 2, 3, 4, 5, 7, 8, 9]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>transform动画和直接使用left、top改变位置有什么优缺点</p>
+<ul>
+<li>定位的left，top会引起页面上其他元素的移动和形状，会影响浏览器产生新的布局，布局的开销巨大，会影响页面的性能。</li>
+<li>基于css的动画和原生支持的web动画，通常在称为合成器线程的线程上处理（GPU），减少页面的重绘和回流，性能更佳</li>
+</ul>
+</li>
+<li><p>ES6中的map和原生的对象有什么区别</p>
+<ul>
+<li>原生对象的key只能是字符串</li>
+<li>map的key可以是任意类型；<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = &#123;</span><br><span class="line">    <span class="attr">o</span>: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// string</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="title class_">Object</span>.<span class="title function_">keys</span>(a)[<span class="number">0</span>]);</span><br><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="title class_">Map</span>();</span><br><span class="line">map.<span class="title function_">set</span>(a, <span class="string">&#x27;content&#x27;</span>);</span><br><span class="line"><span class="comment">// 输出是object 也可以是任何类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(map.<span class="title function_">keys</span>().<span class="title function_">next</span>());</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>前端优化</p>
+<ul>
+<li>减少请求数量: 图片、缓存（304）、接口合并</li>
+<li>减少资源大小：压缩、gzip、</li>
+<li>优化网络连接: DNS预解析</li>
+<li>优化资源加载: 图片服务器、资源加载位置和时机，懒加载和预加载</li>
+<li>减少重绘回流： 避免使用层级较深的选择器，css表达式（重绘），元素适当地定义高度或最小高度（回流），css动画（GPU渲染）</li>
+<li>DOM优化： 减少DOM深度及DOM数量</li>
+<li>构建优化：webWorker(兼容)，webpack优化（公共代码，动态导入和按需加载（js的import()，webpack自身的require.ensure），剔除无用代码（tree shaking(uglify js)））。</li>
+</ul>
+</li>
+<li></li>
 </ol>
 
         
@@ -792,7 +844,7 @@ constant在iOS &lt; 11.2的版本中生效，env在iOS &gt;= 11.2的版本中生
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/10/">十月 2020<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/10/">十月 2020<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
